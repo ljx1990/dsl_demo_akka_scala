@@ -14,15 +14,15 @@ class Apple extends Fruit{
   def name = "apple"
 }
 
-abstract class Box{
+abstract class Box3{
   def fruit:Fruit
   def contains(aFruit:Fruit) = fruit.name.equals(aFruit.name)
 }
 
-class OrangeBox(orange:Orange) extends Box{
+class OrangeBox2(orange:Orange) extends Box3{
   def fruit:Orange = orange
 }
 
-class AppleBox(apple:Apple) extends Box{
+class AppleBox2(apple:Apple) extends Box3{
   def fruit:Apple  = apple
 }
