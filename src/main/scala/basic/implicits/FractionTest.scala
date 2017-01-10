@@ -9,10 +9,10 @@ import scala.io.Source
   */
 object FractionTest extends App{
   implicit def file2RichFile(from:File) = new RishFile(from)
-  new File("G:\\Dubbo.txt").read
+  new File("G:\\Dubbo.txt").canRead
 
 }
 
 class RishFile(val from:File){
-  def read = Source.fromFile(from.getPath).mkString
+  def canRead = Source.fromFile(from.getPath).mkString
 }
